@@ -45,8 +45,6 @@ Asks the user to provide the various parts of speech.
 Places the entire statement together in a say block
 ```
 
-Note that `divide(x,y)` is already implemented for you as a sample.
-
 Additional guidelines:
 
 * Your functions must be named the same and take in the same parameters.
