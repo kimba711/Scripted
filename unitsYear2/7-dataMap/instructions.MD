@@ -6,13 +6,13 @@ You are going to create a heatmap to represent 311 call data from Brooklyn. You 
 
 ##Preparation
 
-1) Create an API key [here](http://clownfish.io/)
-2) Copy and paste the following commands in the terminal
-```
+1. Create an API key [here](http://clownfish.io/)
+2. Copy and paste the following commands in the terminal
+``
 git clone git@github.com:ScriptEdcurriculum/curriculum.git
 cd curriculum/unitsYear2/7-dataMap/starter_code/
-```
-3) Read the documentation for the API [here](docs.md)
+``
+3. Read the documentation for the API [here.](docs.md)
 
 ##Requirements
 
