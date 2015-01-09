@@ -2,7 +2,7 @@
 
 ## /complaints/get
 
-| PARAMETER        | VALUE           | DESCRIPTION  |
+| PARAMETER        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| -----:|
 | apikey      | string | API key user got after registration (**required**) |
 | type      | string      |   The type of complaint (optional) |
@@ -12,14 +12,14 @@
 
 ## /complainttypes/get
 
-| PARAMETER        | VALUE           | DESCRIPTION  |
+| PARAMETER        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| -----:|
 | apikey      | string | API key user got after registration (**required**) |
 | limit | integer      |    The maximum number of results to be returned. Will return all results if none specified. (optional) |
 
 ## /agencies/get
 
-| PARAMETER        | VALUE           | DESCRIPTION  |
+| PARAMETER        | TYPE           | DESCRIPTION  |
 | ------------- |:-------------:| -----:|
 | apikey      | string | API key user got after registration (**required**) |
 | limit | integer      |    The maximum number of results to be returned. Will return all results if none specified. (optional) |
