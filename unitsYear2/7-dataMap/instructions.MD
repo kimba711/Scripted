@@ -21,7 +21,7 @@ git clone git@github.com:ScriptEdcurriculum/curriculum.git;cd curriculum/unitsYe
 ##Starter guide
 
 1. Wireframe the map page. Where do you plan to put the menu? What happens when the user clicks on the menu?
-2. Use [this](http://jsonformatter.curiousconcept.com/) and submit sample requests to it. Make sure you understand how to specify parameters in your requests. Make sure you understand what the responses mean.
+2. Use [this](http://jsonformatter.curiousconcept.com/) and submit sample requests through it. Make sure you understand how to specify parameters in your requests. Make sure you understand what the responses mean.
 3. Open heatmap.js and start going through the tasks.
 
 ##Bonus
