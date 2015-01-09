@@ -9,8 +9,7 @@ You are going to create a heatmap to represent 311 call data from Brooklyn. You 
 1. Create an API key [here](http://clownfish.io/)
 2. Copy and paste the following commands in the terminal
 ``
-git clone git@github.com:ScriptEdcurriculum/curriculum.git
-cd curriculum/unitsYear2/7-dataMap/starter_code/
+git clone git@github.com:ScriptEdcurriculum/curriculum.git;cd curriculum/unitsYear2/7-dataMap/starter_code/
 ``
 3. Read the documentation for the API [here.](docs.md)
 
@@ -22,7 +21,7 @@ cd curriculum/unitsYear2/7-dataMap/starter_code/
 ##Starter guide
 
 1. Wireframe the map page. Where do you plan to put the menu? What happens when the user clicks on the menu?
-2. Use [http://jsonformatter.curiousconcept.com/] and submit sample requests to it. 
+2. Use [this](http://jsonformatter.curiousconcept.com/) and submit sample requests to it. 
 3. Open heatmap.js and start going through the tasks.
 
 ##Bonus
