@@ -30,4 +30,4 @@
 
 This gets 10 complaints reported by the NYPD:
 
-http://clownfish.io/complaints/get?apikey=PUT_KEY_HERE&&agency=NYPD&limit=10
+http://clownfish.io/complaints/get?apikey=PUT_KEY_HERE&agency=NYPD&limit=10
