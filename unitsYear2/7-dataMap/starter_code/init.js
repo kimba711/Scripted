@@ -36,6 +36,9 @@ function updateHeatmap(complaintData)
 
 $(document).ready(function()
 {
+	// Dummy call so we can allow mixed (http & https) content early on.
+	$.getJSON("http://google.com");
+	
 	$("#toggle-heatmap").click(function()
 	{
 		heatmap.setMap(heatmap.getMap() ? null : map);	
