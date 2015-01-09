@@ -12,8 +12,8 @@ You are going to create a heatmap to represent 311 call data from Brooklyn. You 
 ``
 git clone https://github.com/ScriptEdcurriculum/curriculum.git
 ``
-4. A new folder on the left should have appeared. Navigate to `curriculum/unitsYear2/7-dataMap/starter_code/`
-4. Read the documentation for the API [here.](docs.MD)
+4. A new folder on the left should have appeared. Navigate to `curriculum/unitsYear2/7-dataMap/starter_code/`. You will work with three 3 files, specifically heatmap.js. 
+5. Read the documentation for the API [here.](docs.MD)
 
 ##Requirements
 
