@@ -13,9 +13,8 @@ You are going to create a heatmap to represent 311 call data from Brooklyn. You 
 git clone https://github.com/ScriptEdcurriculum/curriculum.git
 ``
 4. A new folder on the left should have appeared. Navigate to `curriculum/unitsYear2/7-dataMap/starter_code/`. 
-Preview index.html in its own window. On your address bar, you will see:
-[Imgur](http://i.imgur.com/aVpzMnT.png)
-Click on the shield and click on "Load unsafe script"
+Preview index.html in its own window. On your address bar, click on the shield and click on "Load unsafe script" like so:
+![image](http://i.imgur.com/ThIquJj.png)
 5. Read the documentation for the API [here.](docs.MD)
 
 ##Requirements
