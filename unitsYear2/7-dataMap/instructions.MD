@@ -21,9 +21,13 @@ git clone git@github.com:ScriptEdcurriculum/curriculum.git;cd curriculum/unitsYe
 ##Starter guide
 
 1. Wireframe the map page. Where do you plan to put the menu? What happens when the user clicks on the menu?
-2. Use [this](http://jsonformatter.curiousconcept.com/) and submit sample requests to it. 
+2. Use [this](http://jsonformatter.curiousconcept.com/) and submit sample requests to it. Make sure you understand how to specify parameters in your requests. Make sure you understand what the responses mean.
 3. Open heatmap.js and start going through the tasks.
 
 ##Bonus
 
 Put a text box and a search button on your page. When the user clicks the button, the system should take what's in the text box and search by complaint descriptor. Think about case insensitivity.
+
+##Submission
+
+Draw three conclusions from the heatmap. You will present them and the heatmap itself to the class.
