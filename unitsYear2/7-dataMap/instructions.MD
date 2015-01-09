@@ -7,11 +7,13 @@ You are going to create a heatmap to represent 311 call data from Brooklyn. You 
 ##Preparation
 
 1. Create an API key [here](http://clownfish.io/)
-2. Open cloud9 or nitrous. Copy and paste the following commands in the terminal
+2. Open cloud9 or nitrous. Create a new project. 
+3. Copy and paste the following commands in the terminal
 ``
-git clone https://github.com/ScriptEdcurriculum/curriculum.git;cd curriculum/unitsYear2/7-dataMap/starter_code/
+git clone https://github.com/ScriptEdcurriculum/curriculum.git
 ``
-3. Read the documentation for the API [here.](docs.MD)
+4. A new folder on the left should have appeared. Navigate to `curriculum/unitsYear2/7-dataMap/starter_code/`
+4. Read the documentation for the API [here.](docs.MD)
 
 ##Requirements
 
