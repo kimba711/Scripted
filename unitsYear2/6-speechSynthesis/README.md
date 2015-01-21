@@ -38,6 +38,7 @@ A 'starter' folder will have beginning code for students while the 'final' folde
 * http://api.microsofttranslator.com
 * http://jsbin.com/sazuca/1/edit
 * http://www.browserstack.com/responsive
+* http://www.smashingmagazine.com/2014/12/05/enhancing-ux-with-the-web-speech-api/
 
 ##Industry Skills
 This project improves the student's industry skills in the following way. For a description of each skill please refer to the [Year 2 Rubric.](https://docs.google.com/a/scripted.org/spreadsheet/ccc?key=0AmfF2axUr9M_dDA0WEV0LWo2MnBUM0JaQnJTYy1sc0E&usp=drive_web#gid=0)

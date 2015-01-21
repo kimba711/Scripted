@@ -7,6 +7,7 @@
 */
 var express = require('express');
 var request = require('request');
+var http    = require('http');
 
 var app = express();
 
@@ -15,7 +16,8 @@ var clientId = "Q9VnbjHWpTkLIsKh";
 var clientSecret = "6CAX6IJg2SHq+mLGqXZOXIXb6rASx/NlQd9A9Xi28r4=";
 var translatorScope = "http://api.microsofttranslator.com";
 
-var translateUrl = "http://api.microsofttranslator.com/v2/Ajax.svc/Translate"
+var baseUrl = "http://api.microsofttranslator.com/v2/Ajax.svc"
+var translateUrl = baseUrl + "/Translate"
 
 app.all('*', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -44,6 +46,11 @@ app.get('/translate', function(req, res){
     }).pipe(res);
 })
 
-var server = app.listen(3000, function() {
-    console.log('Listening on port %d', server.address().port);
+var httpServer = http.createServer(app);
+httpServer.listen(3000, function() {
+    console.log('Listening on port %d', httpServer.address().port);
+});
+var httpsServer = http.createServer(app);
+httpsServer.listen(9500, function() {
+    console.log('Listening on port %d', httpsServer.address().port);
 });

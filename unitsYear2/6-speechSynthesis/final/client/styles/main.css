@@ -10,3 +10,8 @@
 root {
     display: block;
 }
+
+textarea {
+    display: block;
+    margin: 5px;
+}
