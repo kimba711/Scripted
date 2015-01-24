@@ -3,22 +3,29 @@ var request = require('request');
 var http    = require('http');
 var path    = require('path');
 
+if (!process.env.CLIENT_ID) {
+    console.error('Environment variable CLIENT_ID must be set.');
+    process.exit(-1);
+}
+
+if (!process.env.CLIENT_SECRET) {
+    console.error('Environment variable CLIENT_SECRET must be set.');
+    process.exit(-1);
+}
+
 var app = express();
 
 var oauthUrl = 'https://datamarket.accesscontrol.windows.net/v2/OAuth2-13';
-var clientId = "Q9VnbjHWpTkLIsKh";
-var clientSecret = "6CAX6IJg2SHq+mLGqXZOXIXb6rASx/NlQd9A9Xi28r4=";
 
 var translatorScope = "http://api.microsofttranslator.com";
-var baseUrl = "http://api.microsofttranslator.com/v2/Ajax.svc"
-var translateUrl = baseUrl + "/Translate"
+var translateUrl = "http://api.microsofttranslator.com/v2/Ajax.svc/Translate"
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/token', function(req, res) {
     var formData = {
-                    client_id: clientId, 
-                    client_secret: clientSecret,
+                    client_id: process.env.CLIENT_ID, 
+                    client_secret: process.env.CLIENT_SECRET,
                     scope: translatorScope,
                     grant_type: "client_credentials"
                    };

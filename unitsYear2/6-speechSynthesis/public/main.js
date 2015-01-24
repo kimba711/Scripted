@@ -1,70 +1,84 @@
-var authUrl      = "/token";
-var translateUrl = "/translate";
-
-var langs = [
-    {code: 'ar', name: 'Arabic'},
-    {code: 'fr', name: 'French'},
-    {code: 'es', name: 'Spanish'}
-];
-
-function getAuthToken(tokenHandler) {
-    $.get(authUrl).done(function(data) {
-        tokenHandler(data["access_token"]);
-    }).fail(function(data) {
-        console.log("Fail: " + JSON.stringify(data));
-    });
-}
-
-function translate(text, from, to, authToken, handler) {
-    var settings = {
-        headers: {
-            Authorization: "Bearer " + authToken
-        },
-        data: {
-            text: text, from: from, to: to
-        },
-        type: 'GET'
-    };
-    $.ajax(translateUrl, settings).done(function(data){
-        handler(data.toString().slice(1, -1));
-    });
-}
 
 
-function say (text, voice) {
-    var speech = new SpeechSynthesisUtterance(text);
-    speech.voice = voice;
-    speechSynthesis.speak(speech);
-}
+
 
 $(function() {
     
     var voices;
 
-    // wait on voices to be loaded before fetching list
+    /*
+     * Task 1: Populate the drop down with available voices from the speech
+     * synthesis API
+     */
     speechSynthesis.onvoiceschanged = function() {
-        voices = speechSynthesis.getVoices()
-        voices.forEach(function (voice, index) {
-            $('#voices').append('<option>' + voice.name + '</option>');
-        });
     };
-
-    function getVoiceFromName (name) {
-      var foundVoice = null;
-
-      voices.forEach(function (voice, index) {
-        if (voice.name === name) {
-          foundVoice = voice;
-        }
-      });
-
-      return foundVoice;
-    }
-    
-    for (var i = 0; i < langs.length; i++) {
-        $('#langs').append('<option data-lang-code="' + langs[i].code + '">' + langs[i].name + '</option>');
+   
+    /*
+     * Task 2: Take a string 'text' and a type of voice and have the browser
+     *         speak that text in that voice.
+     */
+    function say (text, voice) {
     }
    
+    /*
+     * Task 3: When the button is clicked call the say function with the text
+     *         from the the translateTo text area.
+     */
+    $('#speak-btn').click(function (event) {
+    });
+
+   
+    /*
+     * Task 4: Look up available languages to translate to here: 
+     *  https://msdn.microsoft.com/en-us/library/hh456380.aspx
+     *  
+     *  Create an array of maps in variable langs that stores the code and full name of each
+     *  language. Add at least 5 languages (excluding english). 
+     *  
+     *  Then iterate through the array and add an <option></option>
+     *  tag for each language nested in the <select></select> tags with id 'langs'.
+     *  Set the attribute 'data-lang-code' with the language code and inside the
+     *  <option> tags set the language name.
+     *
+     *  For example, for French the option tag should look like this:
+     *  
+     *  <option data-lang-code="fr">French</option>
+     *  
+     */
+    var langs = [];
+   
+    
+    /*
+     * Task 5: Implement getAuthToken to perform a GET request on url '/token'.
+     * This url will return a map with a token.  Take the 'access_token' from
+     * the map and then call the tokenHandler function with it as a parameter.
+     */
+    function getAuthToken(tokenHandler) {
+    }
+   
+    /*
+     * Task 6: Translate is a function that takes the following parameters:
+     *   text - The string that you will be translating.
+     *   from - language code you will translate from (this is the langage of 'text').
+     *   to   - language code you will translate to
+     *   authToken - a valid Microsoft access token returned via getAuthToken.
+     *   handler - the function you will pass the translation of text too.
+     *
+     * You must implement translate function to take 'text' and translate it to
+     * the language specified by 'to'.  This will be done by calling the the
+     * '/translate' api endpoin with the correct parameters.  You must set
+     *  the Authorization header with the correct authToken as well.
+     *
+     */
+    function translate(text, from, to, authToken, handler) {
+    }
+   
+    /*
+     * Task 7: Use getAuthToken and translate, impelmented above, to translate
+     * text from the 'transateFrom' text area into the 'translateTo' text area.
+     * The language you are translating to is whichever option is selected via
+     * the 'langs' dropdown.
+     */
     $("#translate-btn").click(function(event) {
         event.preventDefault();
         
@@ -77,12 +91,5 @@ $(function() {
         });
     })
     
-    $('#speak-btn').click(function (event) {
-        event.preventDefault();
 
-        var text = $('#translateTo').val();
-        var voiceName = $("#voices option:selected").first().text();
-        var voice = getVoiceFromName(voiceName);
-        say(text, voice);
-    });
 });
