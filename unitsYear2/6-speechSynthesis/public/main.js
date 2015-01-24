@@ -80,15 +80,6 @@ $(function() {
      * the 'langs' dropdown.
      */
     $("#translate-btn").click(function(event) {
-        event.preventDefault();
-        
-        getAuthToken(function(authToken){
-           var text = $("#translateFrom").val();
-           var langTo = $('#langs option:selected').first().attr('data-lang-code');
-           translate(text, "en", langTo, authToken, function(data){
-               $("#translateTo").val(data);
-           }); 
-        });
     })
     
 
