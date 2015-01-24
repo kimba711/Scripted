@@ -4,7 +4,7 @@
 ##Scope
 This project will have students take text input in one language and use an API to translate it into another language of the user's choosing.  The output text must also be read out in the correct dialect using the Chrome speech synthesis API.  If completed quickly an extension project will involve the student getting input via the microphone and using the Web Speech API turn that into input for the translation service.
 
-The main goal of this project is to have students interact with multiple, modern APIs both externally and on the browser.  Using the newest html5 standards they will create a novel app that can be used to recognize speech.  If time permits we will also go over responsivel design with the speech app and attempt to get it working on their mobile phones in chrome.
+The main goal of this project is to have students interact with multiple, modern APIs both externally and on the browser.  Using the newest html5 standards they will create a novel app that can be used to recognize speech.  If time permits we will also go over responsive design with the speech app and attempt to get it working on their mobile phones in chrome.
 
 #Before Class
 Become familiar with the necessary APIs, listed below:
@@ -38,6 +38,9 @@ A 'starter' folder will have beginning code for students while the 'final' folde
 * http://api.microsofttranslator.com
 * http://jsbin.com/sazuca/1/edit
 * http://www.browserstack.com/responsive
+* http://www.smashingmagazine.com/2014/12/05/enhancing-ux-with-the-web-speech-api/
+* http://updates.html5rocks.com/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API
+* http://stiltsoft.com/blog/2013/05/google-chrome-how-to-use-the-web-speech-api/
 
 ##Industry Skills
 This project improves the student's industry skills in the following way. For a description of each skill please refer to the [Year 2 Rubric.](https://docs.google.com/a/scripted.org/spreadsheet/ccc?key=0AmfF2axUr9M_dDA0WEV0LWo2MnBUM0JaQnJTYy1sc0E&usp=drive_web#gid=0)
@@ -94,10 +97,10 @@ Content		| Types  		| Team Work
 #During Class
 
 ##Do Now
-As the students walk into class they are told to go to http://translate.google.com and do any test translations they like.  Tell them to do a few in different langauges and playback the prononuciation of each to notice the different voices.  Have them visit the Google Translate site on their mobile phones (have a student look at another's phone if they don't have a smartphone) and notice the difference between the two versionso of the site. 
+As the students walk into class they are told to go to http://translate.google.com and do any test translations they like.  Tell them to do a few in different langauges and playback the prononuciation of each to notice the different voices.  Have them visit the Google Translate site on their mobile phones (have a student look at another's phone if they don't have a smartphone) and notice the difference between the two versions of the site. 
 
 ##Opening
-Discuss the Google Translate app, talk about how humans do translations and how this is a difficult problem for computers.  Discuss how doing translations "locally" (i.e. in the browser) is currently not very feasilbe, i.e. because it's computationally hard, translation services uses a lot of data you don't have, etc.  Briefly bring up AI and Machine Learning, define the termas and discuss how they are used in the context of translation.  Finally, for fun have the students look at the [World Lens video](https://www.youtube.com/watch?v=h2OfQdYrHRs), mention how this would work with Google Glass (I think there is an app already?). Mention how it was made by a company with just two people and was acquired by Google a few months ago.
+Discuss the Google Translate app, talk about how humans do translations and how this is a difficult problem for computers.  Discuss how doing translations "locally" (i.e. in the browser) is currently not very feasilbe, i.e. because it's computationally hard, translation services use a lot of data you don't have, etc.  Briefly bring up AI and Machine Learning, define the terms and discuss how they are used in the context of translation.  Finally, for fun have the students look at the [World Lens video](https://www.youtube.com/watch?v=h2OfQdYrHRs), mention how this would work with Google Glass (I think there is an app already?). Mention how it was made by a company with just two people and was acquired by Google.
 
 ##Lecture
 Before students begin work on this project they must be introduced to the following concepts. The lecturer may decide the best way to deliver these topics.
@@ -105,7 +108,7 @@ Before students begin work on this project they must be introduced to the follow
 * This will be only the second lesson calling out to APIs, so kids might still be rusty.  Leave it to the lecturers discretion how much time is needed.
 * Bring up [Translator API Documentation](http://msdn.microsoft.com/en-us/library/dd576287.aspx).  Most important things to go over are sections on
 Obtaining an Access Token and Using the AJAX Interface.
-* Look at the backend code and briefly discuss how they will be using this "passthrough" layer instead of the Microsoft API directly.  Discuss why this is necessary because of CORS limitations. Do not go into too much detail about this, just a brief explanation so students have the idea of *why* you we can't call some APIs directly from browser.
+* Look at the backend code and briefly discuss how they will be using this "passthrough" layer instead of the Microsoft API directly.  Discuss why this is necessary because of CORS limitations. Do not go into too much detail about this, just a brief explanation so students have the idea of *why* we can't call some APIs directly from browser because of security issues.
 * Talk about the [Speech Synthesis API](http://updates.html5rocks.com/2014/01/Web-apps-that-talk---Introduction-to-the-Speech-Synthesis-API).  Highlight the difference of the local, browser API vs the external http based API.  
 * Discuss HTML5 and web standards and how they have rapidly evolved over the years.  Discuss how HTML5 is designed to eliminate Flash and what that means for the web.
 * Explain Responsive Design to the students at a high level.  Then give examples witht he basic CSS you would need to change the look and feel on mobile vs desktop.  Talk about Mobile First designs and why this would be good.
