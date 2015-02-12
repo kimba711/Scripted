@@ -61,7 +61,7 @@ Additional guidelines:
 * Note that the "log" button is not natural log (base e) but log base 10.
 * The random number button should generate a number between 1 and 1000.
 
-###Brianstorming
+###Brainstorming
 Before you start coding, identify the list of steps you need to do to finish this project. Here's a start:
 
 1. On paper, write down the formulas for each of the functions. Note the parameters you have to deal with.
