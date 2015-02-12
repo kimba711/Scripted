@@ -180,7 +180,7 @@ Let's write a function that calculates the area of a circle given a radius.
 Write a function that calculates the volume and area of a sphere.
 
 1. Think out loud before you start typing. What are the inputs and outputs to the function?
-2. What are the formulad for the volume and area of a sphere?
+2. What are the formulas for the volume and area of a sphere?
 3. What's the pseudo-code look like?
 4. You've completed the prep work. Write the function in JavaScript. Call it a couple times to ensure it works correctly.
 
