@@ -53,7 +53,7 @@ Additional guidelines:
 * The random number button should generate a number between 1 and 1000.
 
 ###Build Time
-Students will work alone on this project. The teacher's role will be to walk around the room helping students with any quesitons they have. Students are encouraged to look at previous lessons for reference.
+Students will work alone on this project. The teacher's role will be to walk around the room helping students with any questions they have. Students are encouraged to look at previous lessons for reference.
 
 ###Extension Activities
 Students who complete the project at hand early may attempt to improve their project by including the following:  

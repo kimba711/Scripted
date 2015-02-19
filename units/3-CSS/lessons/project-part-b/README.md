@@ -52,7 +52,7 @@ Before you start coding, identify the list of steps you need to do to finish thi
 3. Identify the parts that need to change.
 
 ###Build Time
-Students will work alone on this project. The teacher's role will be to walk around the room helping students with any quesitons they have. Students are encouraged to look at previous lessons for reference.
+Students will work alone on this project. The teacher's role will be to walk around the room helping students with any questions they have. Students are encouraged to look at previous lessons for reference.
 
 ##Closing
 Select students to present their work to the class.

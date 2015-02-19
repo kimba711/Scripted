@@ -34,7 +34,7 @@ Before students are given a computer they must make a paper mock up of how they 
 #####Build Time
 Before students begin, provide a link where they can download the [Starter Code](starterP2.html).  
 
-Students may work alone or pair program (teachers should use their own discretion.) The teacher's role will be to walk around the room helping students with any quesitons they have. Students are encouraged to look at previous lessons for reference.
+Students may work alone or pair program (teachers should use their own discretion.) The teacher's role will be to walk around the room helping students with any questions they have. Students are encouraged to look at previous lessons for reference.
 
 ####Extension Activities
 Students who complete the project at hand early may attempt to improve their project by including the following:  
