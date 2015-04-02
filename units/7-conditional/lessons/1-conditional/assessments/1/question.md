@@ -3,4 +3,4 @@ Write a function, in JavaScript, that takes in two parameters: a string containi
 * "Hi [FIRST_NAME]!"
 * "It is [WEATHER] today"
 
-If the weather is < 30 degrees, then print out "freezing"; if the weather is between 30 and 70, print out "chilly"; if the weather is between 70 and 100, print out "warm".
+If the weather is less than 30 degrees, then print out "freezing"; if the weather is between 30 and 70, print out "chilly"; if the weather is between 70 and 100, print out "warm".
