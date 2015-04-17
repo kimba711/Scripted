@@ -110,7 +110,7 @@ What if we want to add another fruit to the beginning of our array of fruits? We
 
 ```
 fruits.unshift("strawberry");
-console.log("fruits[0]");
+console.log(fruits[0]);
 console.log(fruits.length);
 ```
 
@@ -122,7 +122,7 @@ What if we want to add another fruit to the end of our array of fruits? We could
 
 ```
 fruits.push("kiwi");
-console.log("fruits[3]");
+console.log(fruits[3]);
 console.log(fruits.length);
 ```
 
