@@ -17,7 +17,7 @@ See [here](starter_code/) for code and [here](https://rawgit.com/ScriptEdcurricu
 
 ### Solution code
 
-See [here](https://github.com/ScriptEdcurriculum/solutions/tree/master/units/9-hash/lessons/2-project/solution_code) for code (private).
+See [here](https://githubrb.com/ScriptEdcurriculum/solutions/tree/master/units/9-hash/lessons/2-project/solution_code) for code (private).
 
 ### Assessment
 
@@ -55,7 +55,7 @@ Modify `js/guts.js` and create a function called `searchContacts(contacts, query
 
 This function should return a hash containing all the contacts that match the user's search query. You should check the query against every key-value pair. In other words, the user should be able to search for a contact by name, location, or email.
 
-###Brianstorming
+###Brainstorming
 Before you start coding, identify the list of steps you need to do to finish this project. Here's a start:
 
 1. Write down your contacts in a separate file. Get their names, locations, emails, and pictures ready.
